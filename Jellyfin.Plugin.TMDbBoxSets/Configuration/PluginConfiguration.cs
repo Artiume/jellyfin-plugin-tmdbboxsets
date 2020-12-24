@@ -7,11 +7,14 @@ namespace Jellyfin.Plugin.TMDbBoxSets.Configuration
         public int MinimumNumberOfMovies { get; set; }
 
         public bool StripCollectionKeywords { get; set; }
+        
+        public bool MonitorAllLibraries { get; set; }
 
         public PluginConfiguration()
         {
             MinimumNumberOfMovies = 2;
             StripCollectionKeywords = false;
+            MonitorAllLibraries = false;
         }
     }
 }
